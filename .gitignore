@@ -1,0 +1,9 @@
+hw1/node_modules/
+hw1/public/*.js
+hw1/public/*.css
+hw1/*.log
+hw2/node_modules/
+hw2/public/*.js
+hw2/public/*.css
+hw2/*.log
+materials/
