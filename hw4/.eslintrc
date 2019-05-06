@@ -16,11 +16,13 @@
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
-  rules: {
+  "rules": {
     "max-len": ["error", 120],
     "require-jsdoc": "off",
     "comma-dangle": "off",
-    "indent": [2, 2]
+    "indent": "off",
+    "react/jsx-indent": "off",
+    "react-redux/prefer-separate-component-file": "off"
   },
   "settings": {
     "react": {

@@ -1,12 +1,20 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import MetronomeHitHistory from '../src/MetronomeHitHistory';
-import MetronomeHit from '../src/MetronomeHit';
+import MetronomeHitHistory, {HitInFlight} from '../../src/components/MetronomeHitHistory';
+import MetronomeHit from '../../src/components/MetronomeHit';
 
 describe('MetronomeHitHistory', () => {
   it('renders empty hit list', () => {
     expect(shallow(<MetronomeHitHistory hits={[]} frequency={100} />)).to.exist;
+  });
+
+  it('renders in flight hits', () => {
+    const hits = [{status: 'inFlight'}];
+    const hitList = shallow(<MetronomeHitHistory hits={hits} frequency={100}/>);
+    expect(hitList).to.contain([
+      <HitInFlight key={1} />,
+    ]);
   });
 
   it('renders hits with fractions in reverse order', () => {

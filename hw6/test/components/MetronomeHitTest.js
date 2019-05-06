@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import MetronomeHit from '../src/MetronomeHit';
+import MetronomeHit from '../../src/components/MetronomeHit';
 
 describe('MetronomeHit', () => {
   it('renders bad hit', () => {

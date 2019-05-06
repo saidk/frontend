@@ -1,8 +1,8 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import MetronomeGame from '../src/MetronomeGame';
-import MetronomeButton from '../src/MetronomeButton';
+import MetronomeGame from '../../src/components/MetronomeGame';
+import MetronomeButton from '../../src/components/MetronomeButton';
 
 describe('MetronomeGame', () => {
   it('renders successfully', () => {

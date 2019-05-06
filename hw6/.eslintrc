@@ -6,12 +6,7 @@
     }
   },
   "env": {
-    "node": true,
-    "mocha": true
-  },
-  "globals": {
-    "expect": true,
-    "sinon": true
+    "browser": true
   },
   "plugins": ["react", "import"],
   "extends": [
@@ -26,7 +21,9 @@
     "require-jsdoc": "off",
     "comma-dangle": "off",
     "indent": "off",
-    "react/jsx-indent": "off"
+    "react/jsx-indent": "off",
+    "react-redux/prefer-separate-component-file": "off",
+    "linebreak-style": ["error", "windows"]
   },
   "settings": {
     "react": {

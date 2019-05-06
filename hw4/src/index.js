@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import {start as startMetronome} from './metronome/Metronome';
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+startMetronome();
