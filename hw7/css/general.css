@@ -1,0 +1,85 @@
+body {
+  margin: 50px;
+}
+
+#root {
+  width: 100%;
+}
+
+.loginForm {
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions {
+  text-align: center;
+  margin: 10px;
+}
+
+.newGameForm {
+  text-align: center;
+  margin: 10px;
+}
+
+.games {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bad-hit {
+  color: red;
+}
+
+.good-hit {
+  color: green;
+}
+
+.okay-hit {
+  color: orange;
+}
+
+.loginForm {
+  margin: 50px;
+}
+
+.metronomeButton {
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 5px;
+}
+
+.metronomeButton.close {
+  width: 100px;
+  color: gray;
+}
+
+.metronomeGame {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.onlinePlayers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.onlinePlayers > .player {
+  margin: 10px;
+}
+
+.disconnect > button {
+  width: 100px;
+}
